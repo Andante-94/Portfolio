@@ -12,91 +12,120 @@ body, html {
 
 body {
   background-color: #fafafa;
+
 }
 
-header {
-  width: 100%;
-  padding: 10px 0.5% 0px 0.5%;
-  background: transparent;
-  float: left;
-  position: fixed;
-  background-color: #3e2b65;
-}
-header #logo {
-  color: yellow;
-  cursor: pointer;
+a {
+  text-align: center;
 }
 
-header #logo span {
-  font-size: 1.7em;
-  line-height: 45px;
-  margin-left: 15px;
-}
-.header {
-  color: yellow;
+img {
+  width: 50px;
+  text-align: center;
 }
 
 h1 {
   color: darkgrey;
 }
 
+i {
+  background-color: transparent;
+  margin-left: 30px;
+}
+
+.title {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 25px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.music {
+  color: yellow;
+}
+.school {
+  color: blue;
+}
+.univ {
+  color: green;
+}
+
+.logo {
+  color: yellow;
+  cursor: pointer;
+}
+
+.logo__text {
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 15px;
+  color: yellow;
+}
+
+
 @media (min-width: 701px) {
-  #logo {
+  .logo {
     float: left;
     width: 30%;
     font-size: 1.1em:
   }
-  #about {
+  .about {
     float: right;
     width: 67%;
   }
 }
 @media (max-width: 700px) {
-  #logo {
+  .logo {
     margin-top: 15px;
     width: 100%;
     font-size: 1.5em;
   }
-  #about {
+  .about {
     float:left;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
-      #about {
-        text-align: center;
-        font-size: 1em;
-        line-height: 40px;
-        margin-bottom: 10px;
-      }
-      #about > a{color: #fff}
+.about {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.about__link {color: #fff}
 
-      #about >:hover {
-        color:#b0b0b0;
-        text-decoration: underline;
-      }
-
-      #about > a:not(:last-child) {
-        margin-right: 7%;
-      }
-
-.fixed {
-  z-index: 500;
-  background-color: #fff;
-  border-bottom: 1px solid silver;
+.about__link:hover {
+  color:blue;
+  text-decoration: underline;
 }
 
-header.fixed #logo {
-  color: #343434;
+.about__link:not(:last-child) {
+  margin-right: 7%;
 }
 
-.fixed #about a {color: #343434}
-.fixed #about a:hover {color: #7c7c7c}
-
-/* Главный блок */
-
-#top {
+.header {
   width: 100%;
-  height: 1000px;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
+  background-color: #3e2b65;
+  color: yellow;
+}
+.top {
+  width: 100%;
+  height: 100vh;
   background-image: url(https://avatars.mds.yandex.net/get-pdb/2815335/fbc20d7c-95c9-47bf-a9e3-cf0c5a46c49c/s1200?webp=false);
   background-blend-mode: multiply;
   background-color: #2e3a44;
@@ -107,77 +136,74 @@ header.fixed #logo {
 }
 
 @media (min-width: 1001px) {
-  #top {
+  .top {
     font-size: 3em;
   }
 }
 @media (max-width: 1000px) and (min-width: 651px) {
-  #top {
+  .top {
     font-size: 2em;
   }
 }
 @media (max-width: 650px) {
-  #top {
+  .top {
     font-size: 1.3em;
     padding-top: 50%
   }
 }
 
-#top h1 {
+
+.top__title {
   padding-top: 20%;
 }
 
-i {
-  background-color: transparent;
-  margin-left: 30px;
-}
-.icon {
-  font-size: 20px;
-}
-/* Образование */
-.music {
-  color: yellow;
-}
-.school {
-  color: blue;
-}
-.univ {
-  color: green;
-}
 .education {
   background-color: darkgrey;
-}
-h2 {
-  font-size: 60px;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom:30px;
 }
 
-h3 {
+.education__title {
   font-size: 30px;
   margin-bottom: 5px;
 }
-p {
-  font-size: 25px;
-  margin-left: 75px;
-  margin-right: 75px;
-}
 
-/* Армия */
 .army {
-  background: url(https://www.zastavki.com/pictures/1920x1200/2009/Creative_Wallpaper_Camouflage_017672_.jpg)
+  background: url(https://www.zastavki.com/pictures/1920x1200/2009/Creative_Wallpaper_Camouflage_017672_.jpg);
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
-a {
+.contacts {
   text-align: center;
+  font-size: 25px;
+  background-color: lightgreen;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
-img {
-  width: 50px;
-  margin-left: 30px;
-  text-align: center;
+.contacts__title {
+  font-size: 40px;
 }
-.title {
-  font-size: 50px;
+
+.contacts__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contacts__social-element {
+  display: block;
+}
+
+.contacts__social-element:not(:last-child) {
+  margin-right:15px;;
+}
+
+.contacts__number {
+  font-size: 25px;
+}
+
+.contacts__link {
+  text-decoration: none;
 }

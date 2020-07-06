@@ -8,58 +8,68 @@
     <title>Portf</title>
   </head>
   <body>
-  <header>
-      <div class="header">
-        <a id="logo" href="#">
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="#">
           <i class="fa fa-level-up icon" aria-hidden="true"></i>
-          <span>Up</span>
+          <span class="logo__text">Up</span>
         </a>
-          <div id="about">
-              <a href="#education" title="Образование">Образование</a>
-              <a href="#army"  title="Army">Армия</a>
-              <a href="#contacts"  title="Contacts">Контакты</a>
-            </div>
+        <div class="about">
+          <a class="about__link" href="#education" title="Образование">Образование</a>
+          <a class="about__link" href="#army"  title="Army">Армия</a>
+          <a class="about__link" href="#contacts"  title="Contacts">Контакты</a>
         </div>
+      </div>
     </header>
-    
-    <div id="top">
-      <h1>Портфолио</h1>
+
+    <div class="top">
+      <h1 class="top__title">Портфолио</h1>
     </div>
     <div class="education" id="education">
-      <h2>Образование</h2>
-      <h3><i class="fa fa-music music" aria-hidden="true"></i>Музыкальная школа</h3>
-      <p>Закончил музыкальную школу по классу фортепиано в 2007 году (г.Видное)</p>
+      <h2 class="title">Образование</h2>
+      <h3 class="education__title"><i class="fa fa-music music" aria-hidden="true"></i>Музыкальная школа</h3>
+      <p class="text">Закончил музыкальную школу по классу фортепиано в 2007 году (г.Видное)</p>
       <h3><i class="fa fa-graduation-cap school" aria-hidden="true"></i>Общеобразовательная школа</h3>
-      <p>В 2011 году закончил школу Лицей "БИТ"(г.Омск)</p>
-      <h3><i class="fa fa-university univ" aria-hidden="true"></i>Университет</h3>
-      <p>В 2011 году поступил в Омский Государственный Технический Университет.
+      <p class="text">В 2011 году закончил школу Лицей "БИТ"(г.Омск)</p>
+      <h3 class="education__title"><i class="fa fa-university univ" aria-hidden="true"></i>Университет</h3>
+      <p class="text">В 2011 году поступил в Омский Государственный Технический Университет.
       Факультет "Информационные технологии и компьютерные системы".
-       Кафедра "Автоматизация и робототехника".Специалтность "Управление в технических систмах".
+       Кафедра "Автоматизация и робототехника". Специалтность "Управление в технических систмах".
        Так же в 2016 году закончил курсы "Оператор станков ЧПУ" 2 разряда.
        В 2016 году закончил университет (бакалавриат).</p>
     </div>
     <div class="army" id="army">
-      <h2>Армия</h2>
-      <p>С 2017 по 2019 год проходил службу по контракту в ВМФ г.Севастополь в составе 197
+      <h2 class="title">Армия</h2>
+      <p class="text">С 2017 по 2019 год проходил службу по контракту в ВМФ г.Севастополь в составе 197
          бригады больших десантных кораблей. БДК "Николай Фильченков".
          За врем службы получил благодарность от командующего Черноморским флотом.
          За выполнение боевых задач получил ветерана боевых действий.</p>
     </div>
-    <div class="contacts" id="contacts">
-      <div class="container">
-      <h2 class="title">Контакты</h2>
-      <a target="blank" href="https://vk.com/smile024">
-        <img src="https://avatars.mds.yandex.net/get-pdb/1724502/f8f703d6-963e-462e-8c8c-ed9b5153678b/s1200?webp=false">
-      </a>
-      <a target="blank" href="https://fast.r9488@gmail.com">
-        <img src="https://gamesqa.ru/wp-content/uploads/2018/07/gmailupgrade.jpg">
-      </a>
-        <a target="blank" href="https://www.instagram.com/lesha_sm55/">
-          <img src="https://static.wixstatic.com/media/33a78f_8bbfaac071af4d6ba4c4b20802e1ab3d~mv2.png">
-        </a>
-        <a class="link">8(918)4119451</a>
+    <footer>
+      <div class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title">Контакты</h2>
+          <ul class="contacts__social-list">
+            <li class="contacts__social-element">
+              <a class="contacts__link" target="blank" href="https://vk.com/smile024">
+                    <img src="http://опт.павлотти.рф/upload/medialibrary/f04/f0495ad41a40d30bdcc44b19bcd93b21.png">
+              </a>
+            </li>
+            <li class="contacts__social-element">
+              <a class="contacts__link" target="blank" href="https://fast.r9488@gmail.com">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Gmail_Icon.svg/1024px-Gmail_Icon.svg.png">
+              </a>
+            </li>
+            <li class="contacts__social-element">
+                <a class="link" target="blank" href="https://www.instagram.com/lesha_sm55/">
+                  <img src="https://avatars.mds.yandex.net/get-zen_doc/236854/pub_5da66afc2beb4900ae6ff5b3_5da66d903d008800ac5caae8/scale_1200">
+                </a>
+            </li>
+          </ul>
+          <a class="contacts__number">8(918)4119451</a>
+        </div>
       </div>
-    </div>
+    </footer>
 
   </body>
 </html>
